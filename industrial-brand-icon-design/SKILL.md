@@ -1,307 +1,159 @@
 ---
 name: industrial-brand-icon-design
-description: Use when designing or revising industrial functional icons for automotive, heavy-duty truck, diagnostic-tool, battery-testing, or related branded product projects where cross-project icon consistency and real in-layout usage matter.
+description: Use when designing, generating, simplifying, or revising branded industrial functional icons for automotive, heavy-duty truck, diagnostic-tool, battery-testing, Amazon A+, banner, feature-card, parameter, or system-diagnostic projects.
 ---
 
 # Industrial Brand Icon Design
 
 ## Overview
 
-Design industrial functional icons as a reusable **brand icon system**, not as isolated illustrations.
-
-The primary standard is how icons actually perform inside real branded projects: Amazon A+, banners, feature cards, system-diagnostic modules, parameter sections, comparison modules, and other commercial layouts.
-
-Core principle:
+Build a reusable brand icon system, not isolated illustrations.
 
 **First glance: identify the object. Second glance: understand the function.**
 
-Every decision should favor clarity, family consistency, brand recognition, and reliable small-size use.
+Judge icons in their real layout and at their real display size. Clarity, family consistency, and stable brand recognition outrank isolated cleverness or technical detail.
 
-## When to Use
+## Resolve direction in this order
 
-Use this skill when:
-- Creating a new set of industrial / automotive functional icons.
-- Extending an existing branded icon family.
-- Revising icons after project-level feedback.
-- Matching icons across multiple product lines.
-- Designing icons for Amazon A+, feature cards, banners, diagnostic modules, or other commercial layouts.
-- A reference icon style exists and the new icons must belong to the same visual family.
+1. Explicit current request.
+2. Supplied reference image.
+3. Approved icons from the same set.
+4. Product-line profile.
+5. Brand defaults in this skill.
 
-Do not use this skill for:
-- Full product-scene illustration.
-- Photography composition.
-- Decorative infographics where icons are not the primary visual language.
-- 3D product rendering.
+Never silently change the requested icon count, exact captions, or approved artwork. A reference controls visual grammar—stroke, fill, corner, silhouette, negative space, enclosure behavior, complexity, and optical weight—not the new icon's subject.
 
-## 1. Project Usage Comes First
+## Interpret before drawing
 
-Judge icons by how they are **actually used in the project**, not only by how they look in isolation.
+For each copy block, identify:
 
-Before finalizing an icon set, check:
-- Does it still read clearly when reduced?
-- Does it visually match neighboring icons?
-- Does its weight fit the surrounding text and cards?
-- Does it remain recognizable on dark and light brand backgrounds?
-- Does it feel like part of the same product family?
-- Is the icon still understandable without relying on the label?
+- the customer-facing meaning;
+- the object or action that must read without a caption;
+- any state, change, or negation;
+- the one cue that best separates it from a neighboring meaning.
 
-Do not optimize a single icon so aggressively that it breaks the family.
+Use one concept per icon. Do not turn supporting copy into extra objects or a miniature scene.
 
-## 2. Core Brand Language
+## Lock the family
 
-Default brand language:
-- Modern industrial.
-- Professional.
-- Clean.
-- Direct.
-- Robust rather than delicate.
-- Flat rather than illustrative.
-- Symbolic rather than scene-based.
+Before mapping individual icons, lock:
 
-Preferred construction:
-- **Line + solid shape combination.**
-- Medium-to-bold outline.
-- Limited filled areas.
-- Clear outer silhouette.
-- Controlled geometric simplification.
-- Consistent corner language.
-- Consistent visual center and footprint.
+- polarity and palette;
+- line-and-fill construction;
+- stroke weight, caps, joins, and corners;
+- near-square optical footprint and baseline;
+- negative-space width and detail budget;
+- perspective logic;
+- icon/caption spacing and typography when captions are present.
 
-Avoid treating “line + solid shape” as a rigid ratio. The exact balance may vary by icon, but the final set must have similar visual weight.
+Read [references/style-guide.md](references/style-guide.md) for the construction, color, layout-profile, revision, and acceptance rules. Keep every approved dimension locked during revisions.
 
-## 3. Brand Color Logic
+## Construct each icon
 
-Default brand palette:
-- Black / charcoal / dark gray: structural body.
-- White: reverse use and high-contrast support.
-- Industrial orange: functional emphasis.
+Default formula:
 
-Orange is an **accent**, not the dominant mass.
+**1 dominant subject + 0–1 integrated supporting cue**
 
-Use orange to highlight:
-- Active function.
-- Heat / regeneration.
-- Key signal.
-- Critical flow.
-- Primary action.
-- Important connection point.
+A second cue is allowed only when the meaning cannot be distinguished without it and both cues survive the small-size gate.
 
-Avoid filling the entire icon orange unless the project explicitly requires a monochrome orange set.
+Prefer one continuous or visually interlocked silhouette. Merge state, action, connection, heat, flow, or removal cues into the main geometry. Avoid a collage of detached phone, arrow, Wi-Fi, badge, gear, and vehicle symbols.
 
-## 4. Icon Construction Formula
+Create design intent through silhouette, negative space, line-to-fill rhythm, and controlled asymmetry. “Simple” must not become generic: preserve one recognizable outer contour or meaningful cutout.
 
-Preferred formula:
+## Use the brand language
 
-**1 core subject + 0–2 supporting signals**
+Stable defaults:
 
-Examples:
-- DPF Regen = DPF/filter body + simplified heat/regeneration signal.
-- Turbo = turbo impeller/body; avoid adding engine, pipes, airflow, gauges, and arrows together.
-- Wi-Fi Update = update/download action + Wi-Fi signal.
-- Standalone / No Phone Required = diagnostic device as primary object + clearly excluded phone.
-- Battery Health = battery + simple health/status cue.
-- Report Printing = printer/report body + paper/output cue.
+- modern, clean, direct, robust, flat, and symbolic;
+- medium-to-bold line plus limited solid mass;
+- consistent visual weight rather than a rigid fill ratio;
+- black, charcoal, gray, and white as structural colors;
+- industrial orange as a restrained functional accent;
+- no decorative outer enclosure by default.
 
-When a concept feels too complicated, remove secondary meanings first.
+Orange marks the active state, heat/regeneration, key signal, critical flow, primary action, or important connection point. It must remain subordinate to the structural mass unless the current brief explicitly requests a monochrome orange set.
 
-## 5. Complexity Control
+## Simplify structurally
 
-Each icon should communicate **one dominant concept**.
+When feedback says `太复杂`, `线条太多`, `简单一点`, or `不够直观`:
 
-Avoid:
-- Multiple mechanical assemblies in one icon.
-- Repeated arrows.
-- Too many tiny internal components.
-- Fine technical schematics.
-- Full vehicle scenes.
-- Detailed ECU diagrams.
-- Decorative HUD graphics.
-- Particle effects.
-- Glow-heavy effects.
-- Dense micro-details.
+1. Keep the customer-facing meaning.
+2. Remove or merge supporting cues.
+3. Simplify interior structure.
+4. Strengthen the dominant silhouette or one meaningful cutout.
+5. Rebalance the entire family.
 
-Professional does not mean complicated.
+Do not merely thin strokes, delete arbitrary lines, or replace the icon with a generic symbol. Professional does not mean complicated.
 
-If a user repeatedly says an icon is “too complex,” simplify the structure rather than merely reducing line count.
+## Adapt without breaking the family
 
-## 6. Family Consistency
+Use one brand skeleton across placements and product lines; vary only the necessary detail budget.
 
-A set should share:
-- Similar stroke thickness.
-- Similar solid-area density.
-- Similar outer footprint.
-- Similar corner treatment.
-- Similar optical center.
-- Similar negative-space ratio.
-- Similar detail level.
-- Similar perspective logic.
-- Similar use of orange accent.
+- **Banner:** strongest silhouette, highest contrast, fewest interior details.
+- **Amazon A+ / compact feature card:** immediate recognition, bold thumbnail reading, low detail.
+- **Parameter module:** compact object plus value/unit cue only when the parameter cannot otherwise be distinguished.
+- **System-diagnostic grid:** allow limited mechanical specificity so systems remain distinct; never become mini illustrations.
+- **Battery / consumer-facing tools:** simpler, more universal metaphors.
+- **Heavy-duty diagnostics:** slightly harder geometry and mechanical specificity, while preserving the shared construction.
 
-Do not mix:
-- Thin outline icons with heavy solid icons.
-- Flat front-view icons with pseudo-3D icons.
-- Highly rounded icons with aggressively sharp icons.
-- Minimal symbols with mini illustrations.
-- Multiple unrelated decorative containers.
+Project-specific polarity, pure-outline treatment, background, or layout is an override—not automatically a permanent brand rule.
 
-When shown as a row or grid, no icon should feel dramatically heavier, smaller, busier, or more detailed than the others.
+## Revise without drift
 
-## 7. Reference-Style Priority
+Classify feedback by dimension: metaphor, complexity, weight, line/fill balance, reference match, color, footprint, or layout.
 
-When the user provides a reference icon style:
-1. Treat the reference as the primary visual grammar.
-2. Match its stroke, fill, corner, silhouette, negative space, and complexity.
-3. Translate new functions into that grammar.
-4. Do not merely copy the subject matter while changing the style.
+Change only the named failing dimension. Preserve passing icons and the approved family lock. When only selected icons fail, rebuild only those icons, then recheck the whole set for weight, baseline, spacing, and color balance.
 
-If the user says the result “doesn’t look like the reference,” the next iteration should correct **style grammar first**, not add more details.
+If the user asks for a genuinely new direction, change the dominant silhouette or composition logic. Small badge, spacing, or line tweaks do not constitute a new direction.
 
-## 8. Real Layout Adaptation
+## Generate and inspect
 
-### Amazon A+ / Feature Cards
-Prioritize:
-- Fast recognition.
-- Bold silhouette.
-- Fewer internal details.
-- Strong small-size readability.
-- Consistent visual footprint.
+When the user asks to generate icons, create the visual output; do not stop at a prose prompt.
 
-### Banner
-Prioritize:
-- Slightly stronger outer silhouette.
-- Higher recognition at distance.
-- Minimal detail.
-- Strong contrast.
+The generation brief must state, in order:
 
-### System-Diagnostic Module
-Prioritize:
-- Clear distinction between systems.
-- Slightly more mechanical specificity where necessary.
-- No excessive realism.
+1. exact icon count and layout;
+2. shared style lock;
+3. one sentence per icon describing meaning, dominant subject, and optional cue;
+4. exact captions, if requested;
+5. equal optical boxes, baselines, and separation;
+6. exclusions for extra objects, unintended text, decorative frames, gradients, shadows, textures, mockups, and scene backgrounds.
 
-### Consumer-Friendly Battery / Test Products
-Prioritize:
-- Simpler metaphors.
-- Less technical detail.
-- Faster interpretation.
+Inspect the rendered result itself. Regenerate when any hard acceptance gate fails.
 
-### Heavy-Duty Truck / Professional Diagnostics
-Allow:
-- Slightly more mechanical specificity.
-- More robust geometry.
-- Stronger industrial character.
+## Acceptance gates
 
-But do not abandon the shared brand skeleton.
+Reject or revise an icon set when any of these fail:
 
-## 9. Cross-Project vs Product-Line Rules
+- Each icon reads at both 24 px and 32 px.
+- The icon remains understandable without its label.
+- Distinctive silhouette survives monochrome use.
+- No hairline gaps, fragile strokes, or detached micro-parts disappear at thumbnail size.
+- Footprints are optically near-square and comparable without stretching unlike subjects.
+- No icon is dramatically heavier, smaller, busier, or more detailed than its neighbors.
+- Orange remains a controlled accent across the family.
+- The result matches the supplied reference grammar.
+- Exactly the requested number of icons and captions is present.
 
-### Cross-Project Rules — Keep Stable
-- Line + shape visual language.
-- Consistent optical weight.
-- Strong silhouette.
-- Minimal unnecessary decoration.
-- Orange as accent.
-- Small-size readability.
-- One dominant concept.
-- Family consistency over isolated cleverness.
+## Evidence threshold for evolving the skill
 
-### Product-Line Differences — Allow Variation
-Heavy-duty diagnostics:
-- More mechanical.
-- More robust.
-- Slightly harder geometry.
+Classify new feedback before changing permanent guidance:
 
-Battery testing / consumer-facing tools:
-- More immediate.
-- More simplified.
-- More universally readable.
+- **Cross-project pattern:** repeated across different projects → promote to the stable core.
+- **Product-line pattern:** repeated within one family → keep as a product-line profile.
+- **Layout behavior:** caused by display size or placement → keep as a layout rule.
+- **One-off preference:** single instance or conflicting evidence → retain only for that project.
 
-Specific project references override generic defaults when the user explicitly provides them.
+Repeated user rejection outweighs generic design convention. When evidence changes, strengthen, weaken, merge, or remove existing guidance instead of endlessly appending rules.
 
-## 10. Negative Rules
+## Maintain this skill
 
-Do not generate:
-- Excessive circles around every icon.
-- Unnecessary hexagon frames.
-- Decorative technology lines.
-- HUD overlays.
-- High-frequency textures.
-- Gradients unless explicitly requested.
-- 3D icon rendering.
-- Photorealistic mini-objects.
-- Miniature scene illustrations.
-- Excessive glow.
-- Thin fragile strokes.
-- Overlapping tiny parts.
-- More than 2 supporting symbols unless unavoidable.
-- Icons that need text to explain the basic meaning.
-- Different styles within one icon family.
-- Added objects not required by the function or reference.
+When explicitly asked to update the skill:
 
-## 11. Current Brand Preferences Learned From Project Use
-
-Treat these as strong defaults unless future project feedback changes them:
-- Keep icons simple but not empty.
-- Prefer integrated, one-piece visual concepts.
-- Use line and solid areas together.
-- Avoid unnecessary outer circles.
-- Avoid complicated technical detailing.
-- Make function readable immediately.
-- Preserve consistent family appearance across a full icon set.
-- Use industrial orange selectively.
-- Keep the image clean, smooth, and free of noisy micro-decoration.
-- When an icon is rejected as too complex, simplify the metaphor itself.
-- When a reference is supplied, match the reference style more strictly than generic industrial-icon conventions.
-
-## 12. Iteration Rules
-
-When revising based on project feedback, classify feedback into:
-
-### Stable Brand Rule
-Repeated across multiple projects.
-→ Add to the permanent core.
-
-### Product-Line Rule
-Repeated within one product family.
-→ Keep as a product-line variation.
-
-### Layout Rule
-Only appears because of a specific usage size or placement.
-→ Do not incorrectly promote it to a global style rule.
-
-### One-Off Preference
-Appears once and conflicts with stronger established patterns.
-→ Do not make it permanent yet.
-
-Repeated user rejection has higher priority than generic design convention.
-
-## 13. Weekly Skill Evolution Checklist
-
-When reviewing recent project usage, identify:
-1. New repeated preferences.
-2. Repeated rejection patterns.
-3. Cross-project rules that have become stable.
-4. Product-line-specific differences.
-5. Old rules that are now redundant or conflicting.
-6. Whether reference-style matching needs stronger enforcement.
-7. Whether icon complexity is creeping upward.
-8. Whether small-size readability remains strong.
-
-Only promote a new preference to the permanent core when it is supported by repeated real project use.
-
-## Quick Quality Check
-
-Before final output, verify:
-
-- Can each icon be understood quickly?
-- Is there only one dominant idea?
-- Is the icon clean at small size?
-- Are the lines and solid areas balanced?
-- Is the orange accent restrained?
-- Does the full set feel like one family?
-- Is the visual weight consistent?
-- Are unnecessary frames and decorations removed?
-- Does the result match the supplied reference grammar?
-- Does it fit the actual project layout where it will be used?
-
-If any answer is “no,” revise before output.
+1. Read the repository version of `SKILL.md` as the baseline.
+2. Review real project evidence and classify it with the threshold above.
+3. Add or update cases in [evals/cases.md](evals/cases.md) before changing guidance.
+4. Make the smallest rule changes that resolve demonstrated failures.
+5. Re-run every evaluation case and validate the skill folder.
+6. Review the diff for one-off preferences, contradictions, and duplicated rules.
+7. Commit the verified update; use Git history instead of a changelog.
