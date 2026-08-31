@@ -1,0 +1,4 @@
+interface:
+  display_name: "工业功能图标设计"
+  short_description: "为工业、汽车、重卡与诊断产品创建统一易懂的品牌功能图标系统"
+  default_prompt: "Use $industrial-brand-icon-design to create a concise, consistent industrial feature-icon set from my product copy."
