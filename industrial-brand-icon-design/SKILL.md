@@ -1,159 +1,217 @@
 ---
 name: industrial-brand-icon-design
-description: Use when designing, generating, simplifying, or revising branded industrial functional icons for automotive, heavy-duty truck, diagnostic-tool, battery-testing, Amazon A+, banner, feature-card, parameter, or system-diagnostic projects.
+description: Use when designing, generating, simplifying, revising, or learning from branded industrial functional icons for automotive, heavy-duty truck, diagnostic-tool, battery-testing, Amazon A+, banner, feature-card, parameter, or system-diagnostic projects.
 ---
 
-# Industrial Brand Icon Design
+# 工业品牌功能图标设计
 
-## Overview
+## 核心目标
 
-Build a reusable brand icon system, not isolated illustrations.
+设计的是一套可持续复用的品牌图标系统，而不是互不相关的单个插图。
 
-**First glance: identify the object. Second glance: understand the function.**
+最高优先级：
 
-Judge icons in their real layout and at their real display size. Clarity, family consistency, and stable brand recognition outrank isolated cleverness or technical detail.
+1. 先正确理解功能。
+2. 再选择最容易被目标用户理解的视觉表达。
+3. 再压缩为清晰的一体化图标。
+4. 再套用统一品牌视觉体系。
+5. 最后生成并验收整组结果。
 
-## Resolve direction in this order
+第一眼应识别主体，第二眼应理解功能；缩小后仍然成立；放在一起必须像同一个品牌体系。
 
-1. Explicit current request.
-2. Supplied reference image.
-3. Approved icons from the same set.
-4. Product-line profile.
-5. Brand defaults in this skill.
+## 强制流程：禁止收到文案后直接生成
 
-Never silently change the requested icon count, exact captions, or approved artwork. A reference controls visual grammar—stroke, fill, corner, silhouette, negative space, enclosure behavior, complexity, and optical weight—not the new icon's subject.
+无论用户提供单条文案、一组功能文案、截图中的文案、参考图 + 文案，还是已有图标修改要求，都必须先进行语义分析。
 
-## Interpret before drawing
+固定顺序：
 
-For each copy block, identify:
+**理解 → 提取 → 认知来源 → 表达方案 → 系列规划 → 视觉压缩 → 品牌化 → 生成 → 验收**
 
-- the customer-facing meaning;
-- the object or action that must read without a caption;
-- any state, change, or negation;
-- the one cue that best separates it from a neighboring meaning.
+语义分析读取：`references/semantic-guide.md`
+视觉规则读取：`references/style-guide.md`
+学习与迭代读取：`references/reference-learning.md`
+测试与验收读取：`evals/cases.md`
 
-Use one concept per icon. Do not turn supporting copy into extra objects or a miniature scene.
+## 逐条理解功能
 
-## Lock the family
+每条功能至少分析：
 
-Before mapping individual icons, lock:
+- 功能本体；
+- 核心对象；
+- 核心动作；
+- 重要状态或结果；
+- 用户实际获得什么；
+- 与同组相近功能的关键区别。
 
-- polarity and palette;
-- line-and-fill construction;
-- stroke weight, caps, joins, and corners;
-- near-square optical footprint and baseline;
-- negative-space width and detail budget;
-- perspective logic;
-- icon/caption spacing and typography when captions are present.
+然后形成一句“视觉语义句”。视觉语义句描述用户需要从图标中理解什么，而不是简单重复原文。
 
-Read [references/style-guide.md](references/style-guide.md) for the construction, color, layout-profile, revision, and acceptance rules. Keep every approved dimension locked during revisions.
+## 优先使用用户已有认知
 
-## Construct each icon
+确定视觉表达前，先判断目标用户最可能在哪里见过这个概念：
 
-Default formula:
+1. 车辆原生认知：仪表盘灯、车内按钮、车辆状态符号；
+2. 行业专业认知：ECU、DTC、OBD、DPF、发动机、接口等；
+3. 通用公共认知：搜索、删除、下载、升级、打印、文档、Wi‑Fi、盾牌等；
+4. 产品操作认知：设备、实体按键、屏幕、接口、内置打印机等；
+5. 结果/利益认知：当功能本身难以直观表达时，从最终结果切入。
 
-**1 dominant subject + 0–1 integrated supporting cue**
+优先利用用户已经熟悉的认知，不为了“设计感”随意创造难理解的新符号。
 
-A second cue is allowed only when the meaning cannot be distinguished without it and both cues survive the small-size gate.
+车辆系统、状态或警示功能，应主动考虑司机熟悉的仪表盘或车内符号认知。借用的是认知逻辑，不是机械复制某个厂商的具体图形。
 
-Prefer one continuous or visually interlocked silhouette. Merge state, action, connection, heat, flow, or removal cues into the main geometry. Avoid a collage of detached phone, arrow, Wi-Fi, badge, gear, and vehicle symbols.
+## 同一功能先比较表达方案
 
-Create design intent through silhouette, negative space, line-to-fill rhythm, and controlled asymmetry. “Simple” must not become generic: preserve one recognizable outer contour or meaningful cutout.
+不得想到第一个图形方案就直接生成。
 
-## Use the brand language
+每个功能先快速形成 2–3 种可能表达，再比较：
 
-Stable defaults:
+- 第一眼直观度；
+- 视觉简洁度；
+- 用户已有认知强度；
+- 与同组其他功能的区分度；
+- 是否适合当前品牌体系。
 
-- modern, clean, direct, robust, flat, and symbolic;
-- medium-to-bold line plus limited solid mass;
-- consistent visual weight rather than a rigid fill ratio;
-- black, charcoal, gray, and white as structural colors;
-- industrial orange as a restrained functional accent;
-- no decorative outer enclosure by default.
+优先选择：**最短理解路径 + 足够识别度 + 最低必要复杂度**。
 
-Orange marks the active state, heat/regeneration, key signal, critical flow, primary action, or important connection point. It must remain subordinate to the structural mass unless the current brief explicitly requests a monochrome orange set.
+## 三个及以上图标必须先做系列规划
 
-## Simplify structurally
+当用户请求 3 个及以上图标时，禁止逐个孤立设计。生成前必须检查：
 
-When feedback says `太复杂`, `线条太多`, `简单一点`, or `不够直观`:
+- 每个功能的主体选择；
+- 是否存在大量重复主体；
+- 哪些功能容易语义碰撞；
+- 哪些主体天生容易过长；
+- 哪些主体容易内部过空；
+- 哪些主体天然视觉过重或过轻；
+- 主轮廓是否具有足够差异；
+- 整组视觉重心如何统一；
+- 整组内部密度与线面重量是否平衡。
 
-1. Keep the customer-facing meaning.
-2. Remove or merge supporting cues.
-3. Simplify interior structure.
-4. Strengthen the dominant silhouette or one meaningful cutout.
-5. Rebalance the entire family.
+系列统一不能依靠“同一个外框 + 更换内部小符号”实现。统一的是视觉语言，不是同一个模具。
 
-Do not merely thin strokes, delete arbitrary lines, or replace the icon with a generic symbol. Professional does not mean complicated.
+## 视觉压缩
 
-## Adapt without breaking the family
+选定表达后，将图形压缩为：
 
-Use one brand skeleton across placements and product lines; vary only the necessary detail budget.
+**1 个主体 + 0–1 个必要辅助语义**
 
-- **Banner:** strongest silhouette, highest contrast, fewest interior details.
-- **Amazon A+ / compact feature card:** immediate recognition, bold thumbnail reading, low detail.
-- **Parameter module:** compact object plus value/unit cue only when the parameter cannot otherwise be distinguished.
-- **System-diagnostic grid:** allow limited mechanical specificity so systems remain distinct; never become mini illustrations.
-- **Battery / consumer-facing tools:** simpler, more universal metaphors.
-- **Heavy-duty diagnostics:** slightly harder geometry and mechanical specificity, while preserving the shared construction.
+如果去掉辅助元素仍能准确表达功能，则删除辅助元素。
 
-Project-specific polarity, pure-outline treatment, background, or layout is an override—not automatically a permanent brand rule.
+辅助语义优先：嵌入主体、与主体连接、紧贴主体。
 
-## Revise without drift
+当通用动作符号是理解功能所必需时，允许最多 1 个受控悬浮动作符号，例如升级箭头、下载箭头、删除标记；不得形成第二视觉中心。
 
-Classify feedback by dimension: metaphor, complexity, weight, line/fill balance, reference match, color, footprint, or layout.
+产品设备不是默认主体。只有产品设备本身就是卖点、功能必须依赖设备语境、缺少设备会造成明显歧义，或用户明确要求产品语境时才使用设备。
 
-Change only the named failing dimension. Preserve passing icons and the approved family lock. When only selected icons fail, rebuild only those icons, then recheck the whole set for weight, baseline, spacing, and color balance.
+## 简化不能删除身份
 
-If the user asks for a genuinely new direction, change the dominant silhouette or composition logic. Small badge, spacing, or line tweaks do not constitute a new direction.
+简化顺序：
 
-## Generate and inspect
+1. 删除无意义解释元素；
+2. 删除重复元素；
+3. 合并辅助语义；
+4. 简化内部技术结构；
+5. 保留主体身份特征；
+6. 保留最关键的功能动作或状态。
 
-When the user asks to generate icons, create the visual output; do not stop at a prose prompt.
+原则：**删复杂度，不删身份。**
 
-The generation brief must state, in order:
+- ECU：接口/引脚可以减少，但不能失去 ECU 模块身份；
+- Engine：内部机械结构可以减少，但发动机识别轮廓不能消失；
+- Battery：保留蓄电池核心外轮廓和必要身份特征；
+- DPF：允许抽象，但需保留过滤/颗粒捕集认知。
 
-1. exact icon count and layout;
-2. shared style lock;
-3. one sentence per icon describing meaning, dominant subject, and optional cue;
-4. exact captions, if requested;
-5. equal optical boxes, baselines, and separation;
-6. exclusions for extra objects, unintended text, decorative frames, gradients, shadows, textures, mockups, and scene backgrounds.
+复杂机械功能允许使用代表性结构表达，不要求完整机械剖面。
 
-Inspect the rendered result itself. Regenerate when any hard acceptance gate fails.
+## 应用品牌视觉规则
 
-## Acceptance gates
+只有完成语义与结构判断后，才进入视觉风格阶段。
 
-Reject or revise an icon set when any of these fail:
+品牌默认重点：
 
-- Each icon reads at both 24 px and 32 px.
-- The icon remains understandable without its label.
-- Distinctive silhouette survives monochrome use.
-- No hairline gaps, fragile strokes, or detached micro-parts disappear at thumbnail size.
-- Footprints are optically near-square and comparable without stretching unlike subjects.
-- No icon is dramatically heavier, smaller, busier, or more detailed than its neighbors.
-- Orange remains a controlled accent across the family.
-- The result matches the supplied reference grammar.
-- Exactly the requested number of icons and captions is present.
+- 线面结合；
+- 粗线视觉骨架；
+- 受控实心面；
+- 有意义负空间；
+- 轻微圆角或无圆角；
+- 偏正方形视觉占位；
+- 同系列光学重心尽量处于同一水平线；
+- 内部结构饱满但不过密；
+- 小尺寸仍清晰；
+- 整组视觉重量一致。
 
-## Evidence threshold for evolving the skill
+不得让视觉风格反过来决定错误语义。
 
-Classify new feedback before changing permanent guidance:
+## 生成提示必须经过压缩
 
-- **Cross-project pattern:** repeated across different projects → promote to the stable core.
-- **Product-line pattern:** repeated within one family → keep as a product-line profile.
-- **Layout behavior:** caused by display size or placement → keep as a layout rule.
-- **One-off preference:** single instance or conflicting evidence → retain only for that project.
+内部分析可以详细，但真正发送给生成模型的指令必须简洁，只加入当前任务相关规则。
 
-Repeated user rejection outweighs generic design convention. When evidence changes, strengthen, weaken, merge, or remove existing guidance instead of endlessly appending rules.
+生成指令顺序：
 
-## Maintain this skill
+1. 准确图标数量；
+2. 整组共享视觉规则；
+3. 每个图标一句最终视觉语义；
+4. 必要的对象特殊规则；
+5. 小尺寸限制；
+6. 禁止项。
 
-When explicitly asked to update the skill:
+原则：**内部思考详细，最终执行简洁。**
 
-1. Read the repository version of `SKILL.md` as the baseline.
-2. Review real project evidence and classify it with the threshold above.
-3. Add or update cases in [evals/cases.md](evals/cases.md) before changing guidance.
-4. Make the smallest rule changes that resolve demonstrated failures.
-5. Re-run every evaluation case and validate the skill folder.
-6. Review the diff for one-off preferences, contradictions, and duplicated rules.
-7. Commit the verified update; use Git history instead of a changelog.
+## 生成后必须验收
+
+生成结果不是最终答案。
+
+### 单图
+
+检查：语义、主体、身份特征、辅助元素、内部空/密、缩略可读性。
+
+### 系列
+
+检查：是否像同一品牌、是否偏正方形、视觉重心是否处于相近水平、黑度与线面节奏是否平衡、是否存在明显过长/过重/过空/过细成员、是否存在语义碰撞、是否依赖同一外框模板制造统一。
+
+必须使用 `evals/cases.md` 中的验收标准。
+
+## 处理用户反馈
+
+用户明确指出的问题必须优先处理，但：
+
+**用户没有否定，不代表已经通过。**
+
+任何局部修改都必须重新放回整个体系检查。
+
+原则：**局部反馈，整体重审。**
+
+处理流程：
+
+1. 判断反馈属于语义、表达、结构、风格或系列问题；
+2. 优先修正明确问题；
+3. 重新检查未被点名的图标是否仍符合整个体系；
+4. 必要时进行联动微调；
+5. 最后重新验收整组。
+
+## 参考图与长期学习
+
+用户提供新的优秀参考图或失败案例时，不得直接修改品牌核心。先按以下级别判断：
+
+- A级｜单次参考
+- B级｜项目规则
+- C级｜品牌稳定规则
+- D级｜底层方法论
+
+参考图学习的是规律，不是整张图片。失败案例必须分析为什么失败、属于哪一层、如何修正、是否需要增加测试，以及是否值得升级为长期规则。
+
+## Skill 更新原则
+
+当用户明确要求完善或迭代本 Skill：
+
+1. 读取当前 GitHub 版本作为唯一基线；
+2. 检查近期真实项目反馈；
+3. 分类 A / B / C / D 级证据；
+4. 优先修改已有规则，不无止境追加；
+5. 删除重复、冲突或已失效的规则；
+6. 更新或新增 Eval；
+7. 运行历史 Eval 和新 Eval；
+8. 确认没有能力回退；
+9. 再提交新版。
+
+Skill 应该越来越精确，而不只是越来越长。
