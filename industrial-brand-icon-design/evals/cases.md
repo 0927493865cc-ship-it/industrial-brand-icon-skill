@@ -1,82 +1,165 @@
 # Industrial Brand Icon Design — Evaluation Cases
 
-Use these cases to test whether the skill changes decisions, not whether it repeats exact wording. A passing response must satisfy every listed observable behavior.
+这些测试用于验证 Skill 是否真正改变决策和生成结果，而不是只重复规则文字。除非测试明确为单图，否则必须同时检查单图质量和系列一致性。
 
-## Case 1 — “太复杂” means structural simplification
+## Case 1 — 六个工业功能图标系列综合测试
 
-**Request:** A nine-icon heavy-duty diagnostic set is rejected as “线条太多、太复杂，简单明了一些，但不要变成普通图标.”
+**输入：**
 
-**Pass criteria:**
-- Removes or merges secondary signals before changing the core subject.
-- Keeps one distinctive silhouette or meaningful cutout so the result is not generic.
-- Does not solve the problem only by thinning strokes or deleting arbitrary lines.
-- Rechecks the full family after revision.
+生成 `Read Codes / Clear Codes / Live Data / ECU Information / DPF Regen / Diagnostic Reports` 六个图标。
 
-## Case 2 — Reference image outranks defaults
+**通过标准：**
 
-**Request:** The user supplies a bold black-and-white reference and says the previous icons look completely different.
+- 生成前先逐条理解语义，并完成整组规划；
+- 每个图标先形成视觉语义句，不直接按英文关键词套符号；
+- 每个图标采用 1 个主体 + 0–1 个必要辅助语义；
+- 设备不是默认主体；
+- 六个图标保持统一的线条粗细、线面关系、视觉重量、偏正方形视觉盒和水平光学重心；
+- 不依赖相同外框换小符号制造统一；
+- Read Codes 与 Clear Codes 第一眼可区分；
+- Read Codes 与 DTC/Lookup 类认知不混淆；
+- Live Data 不退化成报告、文档或普通查询；
+- ECU Information 保留 ECU 模块身份，接口可简化；中心过空时允许受控嵌入 `ECU`，但文字不能成为唯一识别依据；
+- DPF Regen 能表达 DPF + 再生状态，可参考司机熟悉的车辆/仪表盘认知，但不能只像普通排气；
+- Diagnostic Reports 与 Read Codes、Live Data 保持主轮廓和语义差异；
+- 内部结构饱满但不过密；
+- 24px / 32px 下主体和核心状态仍可识别。
 
-**Pass criteria:**
-- Extracts stroke, fill, corner, negative-space, enclosure, and optical-weight rules from the reference.
-- Rebuilds the new subjects in that grammar instead of adding detail.
-- Preserves icon count and semantic meaning.
+**失败条件：**
 
-## Case 3 — Integrated “No Phone Required” icon
+- 任一图标语义明显错误或必须依赖标题才能猜；
+- 某个图标明显过长、过窄、过黑、过空、过细或纯线稿；
+- 主视觉重心明显不在同一水平体系；
+- 内部微小结构在缩略尺寸糊成噪点；
+- 两个或以上图标像同一个模板只更换内部符号；
+- 整组出现多个不同构造语言，像不同系列拼接。
 
-**Request:** Create a simple, intuitive icon for `Standalone — No Phone Required`; the user rejects fragmented device + phone + Wi-Fi + slash collages.
+## Case 2 — “太复杂”必须结构性简化
 
-**Pass criteria:**
-- Uses one dominant diagnostic-device silhouette.
-- Integrates at most one phone-removal cue into the primary geometry.
-- Avoids detached micro-symbols, decorative circles, and a miniature scene.
-- Remains understandable without its caption.
+**输入：** 一组重卡诊断图标被拒绝为“线条太多、太复杂，简单明了一些，但不要变成普通图标”。
 
-## Case 4 — Brand color restraint
+**通过标准：**
 
-**Request:** Make a black/orange/gray/white icon family for Amazon A+ cards.
+- 先删除解释性元素、重复元素，再合并辅助语义和简化内部技术结构；
+- 保留主体最少 1–2 个身份关键特征；
+- 不通过单纯变细线条或随意删线解决复杂度；
+- 简化后重新检查 24px / 32px；
+- 重新检查整组黑度、重心和内部密度。
 
-**Pass criteria:**
-- Uses black/charcoal or white as structural mass.
-- Reserves orange for the key state, action, heat, flow, or connection.
-- Keeps orange subordinate across the full set unless the request explicitly calls for monochrome orange.
-- Checks that icons still work in monochrome.
+## Case 3 — Reference image 不允许整包照搬
 
-## Case 5 — Layout-specific detail budget
+**输入：** 用户提供一套很好看的纯线性、大圆角参考图，同时现有品牌长期规则为线面结合、轻微或无圆角。
 
-**Request:** Adapt one approved icon family for a wide banner, compact feature cards, a parameter module, and a system-diagnostic grid.
+**通过标准：**
 
-**Pass criteria:**
-- Preserves the same brand skeleton and metaphors.
-- Uses the fewest details in the banner and compact cards.
-- Uses compact value/unit cues in parameter modules only when required.
-- Allows limited mechanical differentiation in the diagnostic grid without turning icons into illustrations.
+- 提取参考图的认知效率、轮廓简洁、负空间、小尺寸表现等优点；
+- 将“纯线性、大圆角”识别为与品牌稳定规则冲突的特征，不自动升级；
+- 明确建议该参考属于 A/B/C/D 哪一级；
+- 参考的是规律，不直接复制整套风格。
 
-## Case 6 — Small-size and square-footprint gate
+## Case 4 — DPF Regen 语义与原生认知
 
-**Request:** A fleet icon and an RV icon feel too long, thin, and weak beside the rest of the set.
+**输入：** 设计 `DPF Regen` 图标。
 
-**Pass criteria:**
-- Rebalances both into comparable near-square optical footprints without stretching.
-- Preserves recognizable vehicle identity through silhouette.
-- Verifies legibility at 24 px and 32 px.
-- Rejects hairline gaps, tiny detached parts, and details that disappear at thumbnail size.
+**通过标准：**
 
-## Case 7 — Revision without family drift
+- 先理解为 DPF 通过高温再生处理捕集颗粒，而不是“DPF + 任意循环箭头”；
+- 主动考虑司机熟悉的仪表盘/车辆原生 DPF 认知和行业结构；
+- 比较至少 2 种表达方向，再选择最短理解路径；
+- 最终压缩为 DPF 主体 + 最多 1 个必要再生状态；
+- 不绘制完整排气系统、复杂剖面或大量颗粒/热流；
+- 视觉占位偏正方形，缩小后仍清楚。
 
-**Request:** In an approved six-icon set, only `Compatibility`, `Ease of Use`, and `Test Functions` need to become more intuitive.
+## Case 5 — ECU 中心过空
 
-**Pass criteria:**
-- Locks the approved polarity, stroke, fill ratio, corners, optical size, and spacing.
-- Changes only the metaphors/composition of the named icons.
-- Does not regenerate or redesign passing icons unnecessarily.
-- Rechecks weight and baseline across all six icons.
+**输入：** `ECU Information` 图标语义正确，但主体内部大面积空白，用户反馈“中心太空”。
 
-## Case 8 — Evidence threshold for permanent rules
+**通过标准：**
 
-**Request:** Update the skill after one project asks for white icons on a black background and another asks for pure outline icons.
+- 将问题判定为结构密度问题，而不是重新发明语义；
+- 保留 ECU 外轮廓与少量接口/引脚；
+- 优先用结构补足内部视觉密度；
+- 必要时允许主体内部嵌入 `ECU` 三个字母；
+- 缩写不能作为唯一识别依据；
+- 不通过加入悬浮齿轮、Wi‑Fi、文档、箭头等碎片填空。
 
-**Pass criteria:**
-- Records these as project or layout overrides, not permanent universal rules.
-- Promotes only repeated cross-project patterns to the core.
-- Gives repeated user rejection more weight than generic design convention.
-- Merges or removes old guidance when new evidence makes it redundant or conflicting.
+## Case 6 — Battery 身份不可过度抽象
+
+**输入：** 用户要求把 Battery Test 做得更简洁。
+
+**通过标准：**
+
+- 蓄电池整体外轮廓必须保留；
+- 端子、正负极等身份特征可以简化但不能全部消失；
+- 不退化为闪电、电量条或波形的普通电能图标；
+- 简化技术细节，不删除对象身份。
+
+## Case 7 — 系列水平重心与近方占位
+
+**输入：** 一组包含 DPF、Fleet、RV、ECU、Live Data 的图标，其中长条对象显得散乱。
+
+**通过标准：**
+
+- 不拉伸真实对象；
+- 通过缩短非关键延伸、重构构图和集中视觉质量，使光学占位尽量偏正方形；
+- 主视觉光学重心尽量落在同一水平线上；
+- 辅助箭头、热流、波形不得把单个图标明显抬高或压低；
+- 最终并排时无明显上下跳动和长短失衡。
+
+## Case 8 — 局部反馈，整体重审
+
+**输入：** 六个图标中用户只指出第 1、4、5 个“不像一套”，第 2、3 个未被否定。
+
+**通过标准：**
+
+- 优先修正第 1、4、5 个；
+- 不把第 2、3 个自动视为绝对正确；
+- 重新检查第 2、3 个语义、线面、黑度、内部密度、方正程度和重心；
+- 复核通过后才可作为视觉锚点；
+- 局部修改后重新验收全部图标；
+- 必要时允许对未点名成员做联动微调以符合整体体系。
+
+## Case 9 — 受控悬浮动作符号
+
+**输入：** 设计 `Free Upgrade` / `Download Update` 一类功能。
+
+**通过标准：**
+
+- 不机械禁止悬浮元素；
+- 当升级/下载箭头是最直接的通用动作认知时，允许最多 1 个受控悬浮动作符号；
+- 箭头必须服务主体，不形成第二视觉中心；
+- 不叠加设备 + 手机 + Wi‑Fi + 云 + 箭头 + `$0` 等小场景。
+
+## Case 10 — 设备不是默认主体
+
+**输入：** 生成 `Live Data / Battery Test / Diagnostic Reports / DPF Regen` 图标。
+
+**通过标准：**
+
+- 逐条判断设备是否真有必要；
+- Live Data 优先数据/波形，Battery Test 优先蓄电池，Reports 优先报告/结果，DPF Regen 优先 DPF；
+- 不为了系列统一而给每个图标都加入诊断设备；
+- 系列统一通过视觉规则实现，而非相同产品主体。
+
+## Case 11 — 同一系列不能假统一
+
+**输入：** 设计 `Engine / Battery / DPF / ECU / Live Data / Reports` 六个图标。
+
+**通过标准：**
+
+- 主轮廓具有明确差异；
+- 线粗、黑度、负空间、内部密度、重心和构造语言统一；
+- 不使用六个相同圆角矩形/圆圈作为外框，再替换内部符号；
+- 同一系列像同一品牌，但不是同一个模具。
+
+## Case 12 — Skill 规则升级与保护
+
+**输入：** 用户提供一张新的参考图并说“把这张图喂进 Skill”。
+
+**通过标准：**
+
+- 不直接修改核心规则；
+- 分析值得吸收、不建议吸收、现有冲突与证据等级；
+- 明确 A级｜单次参考、B级｜项目规则、C级｜品牌稳定规则或 D级｜底层方法论；
+- 长期升级前检查历史失败与固定 Eval；
+- 如果新规则被验证有效，更新规则同时保留旧能力，不让 Skill 只增不减。
