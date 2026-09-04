@@ -1,145 +1,172 @@
-# Industrial Brand Icon Style Guide
+# 工业品牌图标视觉规范
 
-Read this guide after the family direction is known. It defines the reusable construction system and the controlled variations for real commercial layouts.
+本文件负责“怎么画”，不负责“画什么”。语义与认知来源由 `semantic-guide.md` 决定。
 
-## Style lock
+## 1. 默认构造：线面结合
 
-| Dimension | Brand default | Controlled override |
-|---|---|---|
-| Polarity | Black/charcoal icon on white or light gray | White icon on dark gray/black |
-| Construction | Medium-bold line plus solid focal mass | Pure outline or filled only when required by the brief/reference |
-| Accent | Industrial orange, subordinate | Monochrome when explicitly requested |
-| Corners | Consistent subtle rounding | Match the supplied reference |
-| Footprint | Optically near-square, centered | Subject-specific asymmetry without stretching |
-| Enclosure | None | Only when semantic or part of the reference grammar |
-| Layout | Equal icon boxes | Banner, grid, or standalone exports |
-| Copy | Exact supplied caption | Icon-only when requested |
+品牌默认不是纯线稿，也不是大面积剪影，而是：
 
-Never invent accent colors, captions, borders, rings, cards, or technical labels.
+**粗线骨架 + 受控实心面 + 有意义负空间**
 
-## Geometry and small-size gate
+- 64×64 逻辑画布作为统一基准。
+- 主线视觉粗细约 5.5–6.5 units；以光学一致为准，不机械锁死数学值。
+- 次级结构不得明显细于主线，避免“粗外轮廓 + 细技术线”的漂移。
+- 实心面必须承担身份、层级、状态或视觉重量功能，不能为了装饰随意填黑。
+- 同组不允许纯线、重实心、剪影三种构造语言混用。
 
-Use a logical 64 × 64 icon box before captions:
+## 2. 主体占比与视觉盒
 
-- live area: approximately 44–52 units;
-- main stroke: approximately 5–7 units;
-- minimum negative gap: 4 units;
-- dominant subject: approximately 70–90% of visual mass;
-- integrated cue: no more than 25% of visual mass;
-- no more than two interior cutout groups.
+- 主体通常占有效视觉区域约 75%–85%。
+- 默认视觉占位偏正方形。
+- 建议光学包围盒宽高比优先落在约 0.85–1.15，特殊对象可放宽到约 0.75–1.25。
+- 不允许为了“做方”而拉伸真实对象；应缩短非关键延伸、集中主体质量、重组构图。
+- 真实比例服从识别，构图比例服从系列。
 
-These ranges are optical targets, not stretching instructions. Normalize perceived mass, center, baseline, and footprint. A wide vehicle may use controlled overlap or a shortened representative silhouette; do not distort it into a square.
+## 3. 系列水平重心
 
-Test every icon at 24 px and 32 px on its intended light or dark background. Reject details that merge, vanish, or become noise.
+当生成一组图标时：
 
-## Line-and-fill construction
+- 所有主视觉重心尽量落在同一水平光学轴线上。
+- 关注的是光学重心，不是简单几何中心。
+- 辅助箭头、热流、波形、状态符号不得明显抬高或压低单个图标的整体视觉中心。
+- 局部调整后必须重新检查整组水平重心。
 
-- Use one structural outline system and one deliberate filled focal mass.
-- Keep round caps, joins, corner radii, and cutout widths consistent.
-- Merge supporting cues into the dominant geometry whenever legible.
-- Use filled mass to create hierarchy, not to make one icon much heavier than the set.
-- Preserve one identity-bearing contour or cutout after simplification.
-- Avoid pure-outline drift unless the current request or reference requires it.
+失败信号：某个图标明显“飘起来”“沉下去”或上下跳动感强。
 
-For a negative claim such as `No Phone Required` or `No Ink`, make the absent dependency recognizable, then integrate one removal cue. Do not stack multiple prohibition symbols.
+## 4. 圆角、转角与端点
 
-## Brand color logic
+品牌默认偏硬朗工业几何：
 
-Black, charcoal, gray, and white form the structure. Orange usually occupies about 5–20% of visible icon mass and should normally remain below 25% across the family.
+- 主体外轮廓优先直角、轻微圆角或小切角。
+- 不默认大圆角，不做胶囊化和卡通化。
+- 机械结构优先硬朗；动态语义如波形、热流、气流可以自然曲线。
+- 结构线/机械线优先平头；动态曲线可使用圆头。
+- 同一图标和同一系列不得无理由混用多套端点与圆角语言。
 
-Use orange for:
+原则：**机械结构硬，动态语义可以柔。**
 
-- active state or selected function;
-- heat, regeneration, or energy;
-- data/air/flow direction;
-- connection or contact point;
-- one critical warning or action cue.
+## 5. 内部结构密度与负空间
 
-Do not use orange merely to decorate empty space. Check every color icon in monochrome; meaning and silhouette must remain intact. A project may intentionally request a monochrome orange family, which overrides this ratio for that project only.
+内部结构要“饱满但能呼吸”。
 
-## Detail budget by placement
+- 负空间必须服务识别、结构分层或动作状态，不能出现大面积无意义空腔。
+- 关键内部结构通常控制在 1–3 组以内。
+- 64×64 逻辑画布下，关键负空间宽度建议至少约 4–5 units。
+- 细节应做到少、大、清楚、有间距。
+- 不能为了“饱满”堆密集线条、颗粒和微小机械结构。
 
-| Placement | Primary requirement | Detail rule |
-|---|---|---|
-| Banner | Distance recognition | One bold silhouette; zero or one large cue |
-| Amazon A+ / feature card | Fast scan | Low interior detail; strong line/fill rhythm |
-| Parameter module | Differentiate measurements | Object plus compact value/unit cue only when essential |
-| System-diagnostic grid | Distinguish systems | One mechanical identifier per system; no assemblies or scenes |
-| Standalone asset | Reuse flexibility | Preserve full brand skeleton and thumbnail performance |
+失败信号：
 
-The same metaphor and construction language should survive across placements. Adapt detail, spacing, and contrast; do not redesign the family for each module.
+- 过空：主体内部大面积无语义空白，视觉重量不足；
+- 过密：缩小后粘连、灰化、噪点化；
+- 无层级：内部所有元素同等重要，没有主次。
 
-## Product-line profiles
+## 6. 小尺寸门槛
 
-### Heavy-duty diagnostics
+每个图标都必须检查 32px 与 24px：
 
-- Slightly harder geometry and stronger mechanical character.
-- One recognizable component detail may be retained when it separates systems.
-- Avoid technical schematics, pipe networks, ECU diagrams, and multiple vehicle parts.
+- 主体轮廓仍然成立；
+- 核心动作/状态仍能理解；
+- 不依赖微小点阵、细线或狭窄缝隙；
+- 不出现粘连和灰糊；
+- 短缩写不可成为唯一识别依据。
 
-### Battery testing and consumer-facing tools
+只在大尺寸好看的细节应删除或合并。
 
-- Prefer universally recognized batteries, printers, reports, switches, and status cues.
-- Reduce technical detail and shorten the interpretation path.
-- Keep safety and test functions literal enough to understand without specialist knowledge.
+## 7. 身份特征最小保留
 
-These profiles adjust specificity; they do not replace the brand lock.
+简化的是复杂度，不是身份。
 
-## Family consistency
+- ECU：可减少引脚数量，但要保留模块/接口感；中心过空时可受控嵌入 `ECU`。
+- Engine：可减少内部机械细节，但保留发动机经典外轮廓与 1–2 个代表结构。
+- Battery：保留蓄电池整体外轮廓、端子或正负极等核心身份，不得退化为普通闪电/电量符号。
+- DPF：保留过滤/颗粒捕集代表结构，不要求完整排气系统。
 
-Across a row or grid, verify:
+高度通用的 2–4 字符行业缩写（如 ECU / ABS / DPF）可在主体内部作为辅助识别和密度补足，但不得作为唯一识别依据。
 
-- equal perceived weight and comparable live area;
-- aligned optical centers and baselines;
-- consistent stroke, fill density, corners, and gaps;
-- distinct dominant contours rather than one base symbol with swapped badges;
-- balanced orange distribution, with no accidental visual favorite;
-- enough separation that generated icons do not fuse.
+## 8. 线面视觉重量
 
-Do not mix thin outline, heavy solid, pseudo-3D, mini illustration, or unrelated enclosure systems in one family.
+- 线负责说明“是什么”，面负责稳定视觉重量和强调重点。
+- 实心面优先嵌入主体身份结构、核心功能结构或状态区域。
+- 视觉黑度比机械百分比更重要。
+- 同一系列允许不同实心比例，但不能出现明显的重量等级差。
+- 如果某个图标特别黑、特别轻、特别像剪影或纯线稿，必须重调。
 
-## Reference-image extraction
+## 9. 辅助语义
 
-Before generating from a reference, record:
+默认结构：**1 个主体 + 0–1 个必要辅助语义**。
 
-1. polarity and color distribution;
-2. line-to-fill rhythm and stroke weight;
-3. corner and terminal language;
-4. enclosure behavior;
-5. negative-space width;
-6. optical size and footprint;
-7. detail budget and perspective;
-8. caption typography, gap, and alignment when present.
+辅助语义优先：
 
-If feedback says `完全不一样`, `不像参考图`, or `严格参考`, correct this grammar before revisiting the metaphor.
+1. 嵌入主体；
+2. 与主体连接；
+3. 紧贴主体。
 
-## Revision matrix
+当动作本身依赖通用符号才能快速理解时，允许最多 1 个受控悬浮动作符号，如升级、下载、删除箭头/标记；不得形成第二视觉中心。
 
-| Feedback | Change | Preserve |
-|---|---|---|
-| `太复杂 / 线条太多` | Remove/merge cues, simplify interior structure | Meaning, dominant identity, family lock |
-| `简约但不简单` | Strengthen contour, negative space, one meaningful cutout | Detail budget |
-| `更直观 / 易懂` | Shorten the metaphor; use a more literal subject/action | Weight, palette, spacing |
-| `粗一点` | Increase stroke and filled mass; enlarge gaps proportionally | Meaning, count, footprint |
-| `更有设计感` | Improve silhouette, asymmetry, negative space, and line/fill rhythm | Complexity ceiling |
-| `线面结合` | Use one outline structure and one filled focal mass | Polarity, optical weight |
-| `不要带圈` | Remove non-semantic enclosures | Core silhouette and mass |
-| `太长 / 不够方正` | Recompose into a near-square optical footprint | Recognizable subject proportions |
-| `完全不一样` | Replace dominant metaphor or composition as needed | Count, copy, shared reference grammar |
-| `参考图样式` | Match extracted reference grammar | New-copy semantics |
-| selected icons only | Rebuild only named failing icons | Passing icons and locked dimensions |
-| `重新出一个方案` | Change dominant silhouette or composition logic | Meaning and shared brand skeleton |
+禁止无意义悬浮的手机、Wi‑Fi、齿轮、数据点、箭头、徽章等组合成小场景。
 
-After any change, recheck the entire family at 24 px and 32 px.
+## 10. 系列统一与差异化
 
-## Exclusion baseline
+统一的是视觉语法，不是重复模板。
 
-Unless the current request or reference explicitly requires them, exclude:
+同组必须检查：
 
-- repeated outer circles, hexagons, badges, and cards;
-- decorative tech lines, HUD overlays, particles, and glow;
-- gradients, shadows, textures, and 3D rendering;
-- photorealistic mini-objects and scene illustrations;
-- thin fragile strokes, hairline gaps, and overlapping micro-parts;
-- repeated arrows and detached signal clusters;
-- extra objects, labels, or invented functions.
+- 视觉盒与光学尺寸；
+- 主线粗细；
+- 线面节奏；
+- 黑度；
+- 内部密度；
+- 圆角/硬朗程度；
+- 水平重心；
+- 最小负空间；
+- 辅助语义强弱。
+
+同时每个图标必须保留自己的：
+
+- 主轮廓差异；
+- 核心结构差异；
+- 必要动作/状态差异。
+
+禁止“相同外框 + 更换小符号”的假统一。
+
+## 11. 方向与构图节奏
+
+- 同类动作尽量使用一致的方向逻辑。
+- 默认推进/输出可偏右，升级偏上，下载偏下，撤销/返回偏左；实际以语义为准。
+- 不允许为了差异化随机改变箭头方向。
+- 动态符号必须服从主体，不得拉长图标或带偏重心。
+
+## 12. 颜色
+
+默认结构色为黑、炭灰、灰、白；工业橙仅作为受控功能强调。
+
+- 橙色用于活动状态、热/再生、能量、流向、连接点、关键警告或主要动作。
+- 不用橙色填补空白或装饰。
+- 当前任务明确要求黑白时，完全服从当前要求。
+- 参考图或项目可临时覆盖颜色，但不得自动改写长期品牌规则。
+
+## 13. 排除项
+
+除非当前任务或参考图明确要求，默认排除：
+
+- 大圆角 App 风外框；
+- 重复外圈、六边形、徽章、卡片；
+- HUD、粒子、科技装饰线、发光、渐变、阴影、纹理、3D；
+- 微型场景、车辆 + 设备 + 多符号拼贴；
+- 细发丝线、狭窄缝隙、密集引脚/颗粒；
+- 多个悬浮箭头或状态点；
+- 每个图标都强行加入产品设备。
+
+## 14. 局部修改后的整组复核
+
+用户只指出某些图标时，其他图标不能自动视为通过。
+
+流程：
+
+1. 优先修正明确问题；
+2. 重新检查未被点名成员是否仍符合当前体系；
+3. 必要时联动微调；
+4. 重新检查整组重心、黑度、密度、方正程度与区分度。
+
+原则：**局部反馈，整体重审。**
