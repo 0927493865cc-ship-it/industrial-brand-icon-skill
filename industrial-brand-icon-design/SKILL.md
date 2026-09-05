@@ -182,6 +182,8 @@ description: Use when designing, generating, simplifying, revising, or learning 
 
 必须使用 `evals/cases.md` 中的验收标准。
 
+沿用用户已认可的诊断六图线面风格时，读取 [正反验收参考](references/diagnostic-six-icon-acceptance.md)，查看两张原图并执行 Case 14。这是一项有适用范围的参考；其中对组合、载体复用、缩写和尺寸的说明用于本风格，不将其升级为所有风格的唯一模板。
+
 ## 处理用户反馈
 
 用户明确指出的问题必须优先处理，但：
